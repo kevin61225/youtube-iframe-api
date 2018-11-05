@@ -36,12 +36,10 @@
                     loop: 1, // auto loop
                     enablejsapi: 1,
                     autoplay: 1,
-                    rel: 0, // diable related video list when video paused or end
-                    // create playlist here 
-                    // find the corresponded playlist id and pasted it at here
+                    rel: 0, // diable related video list when video paused or end 
+                    // find the target playlist id and pasted it at here
                     listType: 'playlist',
                     list: 'PLwd0lmvO8GPjAVjtALIlTHoJGCaEyGuFZ',
-                    playlist: 'PLwd0lmvO8GPjAVjtALIlTHoJGCaEyGuFZ'
                 },
             });
         }
@@ -54,7 +52,6 @@
         var done = false;
         function onPlayerStateChange(event) {
             if (event.data == YT.PlayerState.PLAYING && !done) {
-
                 // do something when state changes to PLAYING
                 //setTimeout(stopVideo, 6000);
                 //done = true;
